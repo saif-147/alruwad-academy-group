@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تم التسجيل بنجاح</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="style.css"> <!-- سنستخدم نفس ملف الستايل -->
+  <style>
+    .success-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .success-card {
+      background: #0f2d44;
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+      max-width: 600px;
+      width: 100%;
+      border-top: 5px solid #f5c27a;
+    }
+    .success-card i.main-icon {
+      font-size: 80px;
+      color: #27ae60;
+      margin-bottom: 20px;
+      display: block;
+      animation: bounceIn 1s ease;
+    }
+    .success-card h1 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .success-card p {
+      font-size: 18px;
+      color: #cfe1f5;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-success {
+      padding: 12px 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-primary { background: #f5c27a; color: #002f58; }
+    .btn-outline { border: 2px solid #f5c27a; color: #f5c27a; }
+    .btn-success:hover { transform: translateY(-3px); opacity: 0.9; }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.05); opacity: 1; }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<section class="success-container">
+  <div class="success-card">
+    <i class="fa-solid fa-circle-check main-icon"></i>
+    <h1>تم استلام طلبك بنجاح!</h1>
+    <p>شكراً لثقتك بنا. فريق "بروفت ماسترز" سيقوم بمراجعة بياناتك والتواصل معك عبر الهاتف أو الواتساب خلال الـ 24 ساعة القادمة.</p>
+    
+    <div class="btn-group">
+      <!-- زر العودة -->
+      <a href="index.html" class="btn-success btn-outline">
+        <i class="fa-solid fa-arrow-right"></i> العودة للرئيسية
+      </a>
+      <!-- زر إضافي (اختياري) للانضمام لجروب التليجرام مثلاً -->
+      <a href="https://t.me" class="btn-success btn-primary">
+        <i class="fa-brands fa-telegram"></i> تابعنا على تليجرام
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

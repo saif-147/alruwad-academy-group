@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>alruwad academy group</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+  <link rel="stylesheet" href="style.css">
+  <!-- أضف مكتبة الأنميشن في الـ Head -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+
+    <div class="headline" data-aos="fade-down" data-aos-duration="1000">
+      <h1>آلاف الناس دخلوا السوق...</h1>
+      <h2><strong>وانت لسه </strong>بتفكر؟</h2>
+      <!-- تم تغيير الـ pre إلى p هنا -->
+      <p class="sub-headline" data-aos="fade-up" data-aos-duration="1000">
+        ناس حقيقية جربت، شاركت تجربتها، وبدأت طريق مختلف. <br>
+        مش كلام تسويق ولا وعود فاضية، فيديوهات حقيقية لمستخدمين حقيقيين يحكوا كيف كانت تجربتهم من اول خطوة وليش قرروا يكملوا.
+      </p>
+    </div>
+
+    <div class="main-content">
+      <div class="video-box" data-aos="zoom-in-right" data-aos-duration="1200">
+        <video 
+          src="video/ليش العملاء يثقوا في بروفت ماسترز انفيست؟ _ تجارب حقيقية.mp4"
+          controls
+          playsinline
+          preload="metadata">
+        </video>
+      </div>
+
+      <form class="form-box" action="send.php" method="POST" data-aos="zoom-in-left" data-aos-duration="1200">
+        <h3 data-aos="fade-down" data-aos-duration="800">خد قرارك الآن</h3>
+        <p id="s" data-aos="fade-up" data-aos-duration="800">كل يوم تأخير هو فرصة بتضيع</p>
+        <p id="b" data-aos="fade-up" data-aos-duration="800">انضم الآن لآلاف المستخدمين اللي بدؤوا بالفعل</p>
+
+        <input type="text" name="name" placeholder="الاسم الكامل" required data-aos="fade-right" data-aos-duration="600">
+        <input type="email" name="email" placeholder="البريد الالكترونى" required data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
+        <input type="tel" name="phone" placeholder="رقم الهاتف" required data-aos="fade-right" data-aos-duration="600" data-aos-delay="200">
+        <input type="number" name="age" placeholder="العمر" required data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
+
+        <button type="submit" class="btn-animate" data-aos="zoom-in" data-aos-duration="800">ابدأ الآن قبل فوات الفرصة</button>
+
+        <p data-aos="fade-up" data-aos-duration="800">الأماكن المتاحة محدودة حفاظاً على جودة المتابعة.</p>
+
+        <div class="badges">
+          <span data-aos="fade-up" data-aos-duration="600"><i class="fa-solid fa-check-circle"></i> نتائج ملموسة</span>
+          <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="100"><i class="fa-solid fa-check-circle"></i> منصة آمنة</span>
+          <span data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"><i class="fa-solid fa-check-circle"></i> مستخدمين حقيقيين</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- نص التحذير القانوني -->
+<section class="disclaimer" data-aos="fade-up" data-aos-duration="1000">
+  <p>
+    التداول في سوق الفوركس وعقود الفروقات باستخدام الرافعة المالية ينطوي على مخاطر مرتفعة، وقد لا يكون مناسبًا لجميع الأشخاص. الرافعة المالية يمكن أن تعمل لصالحك أو ضدك، وقد تؤدي إلى خسارة كامل رأس المال المستثمر أو جزء كبير منه. لذلك، يجب التأكد من فهمك الكامل لطبيعة المخاطر المرتبطة بالتداول، ومراعاة أهدافك الاستثمارية وخبرتك قبل اتخاذ أي قرار.
+  </p>
+</section>
+
+
+<!-- زر واتساب العائم -->
+<a href="https://whatsapp.com/phone=31622229131" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+  <span class="tooltip">تواصل معنا</span>
+</a>
+
+<!-- سكربت الأنميشن قبل إغلاق الـ body -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+</script>
+
+</body>
+</html>
